@@ -31,6 +31,17 @@ li {
   list-style: none;
 }
 
+/* .section{
+  margin: 0;
+  padding: 0;
+} */
+
+.nav{
+  display: flex;
+  align-items: center;
+  padding: 0 215px 0 215px;
+}
+
 /* Перша частина логотипу */
 .web {
   font-family: "Raleway", sans-serif;
@@ -59,6 +70,35 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+/* Вирівнювання посилань навігації */
+.nav-item{
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-item .item:not(:last-child){
+  margin-right: 50px;
+}
+
+/* Альтернативні варіанти */
+/* .nav-item .item:last-child{
+  margin-right: 0px;
+} */
+
+/* .nav-item .item + .item{
+  margin-left: 0px;
+}  */
+
+/* Вирівнювання контактів */
+.contacts{
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts :not(:last-child){
+  margin-right: 50px;
 }
 
 /* Посилання навігації */
@@ -91,7 +131,12 @@ li {
 }
 /* Блок - "Титул" */
 .hero {
+  padding: 200px 452px;
+  align-items: center;
+  text-align: center;
+
   background-color: var(--section-color);
+
 }
 
 /* Кнопкa з головної сторінки */
@@ -99,9 +144,9 @@ li {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--hover-color);
@@ -126,6 +171,8 @@ li {
 
 /* Заголовок про нас */
 .secondary-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -158,16 +205,52 @@ li {
   color: var(--name-color);
 }
 
+/* Вирівнювання секцій */
+.our-advantage,
+.our-work,
+.our-team{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
 /* Опис переваг */
 .advantage {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
+/* Вирівнювання секції "Наша робота"
+.our-work{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+} */
+
+.work-photo :not(last-child){
+  margin-right: 30px;
+}
+
 /* Блок - "команда" */
 .team {
   background-color: #f5f4fa;
+}
+
+/* Вирівнювання секції "Наша команда"
+.our-team{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+} */
+
+.team-photo :not(last-child){
+  margin-right: 30px;
 }
 
 /* П.І.Б */
@@ -209,7 +292,7 @@ li {
   background-color: var(--section-color);
 }
 
-.footer-adres {
+.footer-adress {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -222,4 +305,12 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo{
+  margin: 0;
+}
+
+.footer-contacts{
+  padding: 60px auto 60px 215px;
 }
