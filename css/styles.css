@@ -319,6 +319,8 @@ li {
 
 /* Посади */
 .position {
+  padding-bottom: 30px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
